@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./timer.css";
 export default function Timer(props) {
-  const { person } = props;
+  const { event } = props;
 
   const [time, setTime] = useState({
     days: 0,
@@ -10,9 +10,9 @@ export default function Timer(props) {
     secs: 0
   });
   function updateTime() {
-    const birthday = new Date(person.birthday);
+    const date = new Date(event.date);
     const today = new Date(); // gets curent time
-    let diff = +birthday - +today; //difference between chosen day and current time
+    let diff = +date - +today; //difference between chosen day and current time
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     diff = diff - days * (1000 * 60 * 60 * 24); // subtracts the days already accounted for
@@ -35,6 +35,7 @@ export default function Timer(props) {
   setInterval(updateTime, 1000);
   return (
     <div id="timer-container">
+      <h3>{event.name}</h3>
       <div className="card">
         <div className="card-time">
           <h1>{time.days}</h1>

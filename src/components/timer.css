@@ -1,11 +1,17 @@
 #timer-container {
   border: 3px solid red;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(115px, 1fr));
   justify-content: center;
   gap: 2rem;
   align-self: center;
   margin-top: auto;
+}
+#timer-container h3 {
+  grid-column: 1/-1;
+  color: white;
+  text-align: center;
+  align-self: center;
 }
 .card {
   border: 5px solid rebeccapurple;
@@ -17,4 +23,10 @@
 }
 .card-time {
   color: hsl(345, 95%, 68%);
+}
+@media (max-width: 600px) {
+  #timer-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+  }
 }

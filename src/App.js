@@ -5,14 +5,13 @@ import Timer from "./components/Timer";
 import data from "./components/data";
 import { useState } from "react";
 export default function App() {
-  const [angie, paris, kevon] = data;
   const timersJSX = data.map((event) => {
-    return <Timer person={event} />;
+    return <Timer event={event} key={event.name} />;
   });
   return (
     <div className="App">
       <Header />
-      {timersJSX}
+      {timersJSX[3]}
       <Footer />
     </div>
   );
