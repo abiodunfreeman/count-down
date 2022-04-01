@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      {timersJSX[3]}
+      {timersJSX[2]}
       <Footer />
     </div>
   );

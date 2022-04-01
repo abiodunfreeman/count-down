@@ -32,7 +32,7 @@ export default function Timer(props) {
       secs
     });
   }
-  setInterval(updateTime, 1000);
+  setInterval(updateTime, 1000); //Updates time state every second
   return (
     <div id="timer-container">
       <h3>{event.name}</h3>
@@ -40,25 +40,25 @@ export default function Timer(props) {
         <div className="card-time">
           <h1>{time.days}</h1>
         </div>
-        <h2>Days</h2>
+        <p>Days</p>
       </div>
       <div className="card">
         <div className="card-time">
           <h1>{time.hours}</h1>
         </div>
-        <h2>Hours</h2>
+        <p>Hours</p>
       </div>
       <div className="card">
         <div className="card-time">
           <h1>{time.mins}</h1>
         </div>
-        <h2>Minuets</h2>
+        <p>Minuets</p>
       </div>
       <div className="card">
         <div className="card-time">
           <h1>{time.secs}</h1>
         </div>
-        <h2>Seconds</h2>
+        <p>Seconds</p>
       </div>
     </div>
   );
