@@ -1,2 +1,2 @@
-# count-down
+# count-down-timer
 Created with CodeSandbox

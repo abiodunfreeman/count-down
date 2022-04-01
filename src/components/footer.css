@@ -1,0 +1,22 @@
+footer {
+  height: 197px;
+  align-self: stretch;
+  margin-top: auto;
+  background-image: url("./images/pattern-hills.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.icon path:hover {
+  fill: hsl(345, 95%, 68%);
+}
+/*----------------HEADER---------------------*/
+header {
+  color: white;
+  letter-spacing: 3px;
+  border: 3px solid orangered;
+}

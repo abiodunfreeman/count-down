@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+}
+#root {
+  background-color: hsl(235, 16%, 14%);
+  background-image: url("./images/bg-stars.svg");
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  border: 4px solid green;
+}
